@@ -1,13 +1,21 @@
 {
   "name": "root",
   "private": true,
+  "author": "NanGuaChui",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "clean": "npx rimraf yarn.lock && npx rimraf node_modules && npx rimraf ./**/node_modules"
+    "clean": "npx rimraf yarn.lock && npx rimraf node_modules && npx rimraf ./**/node_modules",
+    "bootstrap": "npx lerna bootstrap",
+    "publish": "lerna publish",
+    "compile": "lerna run compile"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
   },
   "dependencies": {
+    "father-build": "^1.20.4",
     "rimraf": "^3.0.2"
   }
 }

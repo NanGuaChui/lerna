@@ -1,4 +1,4 @@
-# sisyphe
+# demo
 
 前端组件库 - demo
 
@@ -18,8 +18,6 @@
 ## 关注点
 1. `React Components(@sisyphe/components)`模块禁止使用`css modules`；
 
-## Sisyphe FE framework v2
-
 ### 特性
 
 
@@ -35,3 +33,11 @@
 7. [ ] 依赖分析
 8. [ ] 便捷的文档编写方式
 9. [ ] utils 兼容到 vue 项目
+
+
+### 其他
+
+[lerna](http://www.febeacon.com/lerna-docs-zh-cn/)
+
+[father-build](https://github.com/umijs/father)
+

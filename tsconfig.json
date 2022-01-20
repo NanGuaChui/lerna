@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "jsx": "preserve",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "noImplicitAny": false
+  },
+  "exclude": ["**/dist/", "**/node_moduels/"]
+}
