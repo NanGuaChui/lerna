@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "clean": "npx rimraf yarn.lock && npx rimraf node_modules && npx rimraf ./**/node_modules"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
