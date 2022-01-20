@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "vue": "^3.2.27"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@storybook/addon-actions": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
+    "@storybook/addon-links": "^6.4.13",
+    "@storybook/vue3": "^6.4.13",
+    "babel-loader": "^8.2.3",
+    "vue-loader": "^16.8.3"
+  }
 }

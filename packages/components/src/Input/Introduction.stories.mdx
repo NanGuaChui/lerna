@@ -1,0 +1,42 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+<Meta title="UI/Input" component={Input} />
+
+# Basic
+
+常规文本框
+
+<Preview>
+  <Story name="Basic">
+    <Input style={{ width: 200 }} />
+  </Story>
+</Preview>
+
+# Regexp
+
+仅能输入数字
+
+<Preview
+  mdxSource={`
+  import React from 'react'
+  import Input from './index'
+  const Demo = () => {
+    const [state, setState] = React.useState(0)
+    return (
+      <Input
+        reg={/^\d+$/}
+        onChange={e => setState(e.target.value)}
+        value={state}
+        style={{ width: 200 }}></Input>
+    )
+  }
+  export default Demo
+`}>
+  <Story name="Regexp">
+    <Demo />
+  </Story>
+</Preview>
+
+# Props
+
+<Props of={Input}></Props>
